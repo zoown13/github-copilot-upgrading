@@ -1,7 +1,6 @@
-## Challenging GitHub Copilot
+## Upgrading a Legacy Project with GitHub Copilot
 
-Let's go through some challenging requests for GitHub Copilot and address them
-as they happen.
+Let's go through the process of taking a legacy (outdated) Python application and bring it up to the latest version of Python with the assitance of GitHub Copilot.
 
 > [!NOTE]
 > This repo is intended to give an introduction to various **GitHub Copilot** features, such as **Copilot Chat** and **inline chat**. Hence the step-by-step guides below contain the general description of what needs to be done, and Copilot Chat or inline chat can support you in generating the necessary commands.
