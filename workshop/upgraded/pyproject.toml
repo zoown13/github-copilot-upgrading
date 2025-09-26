@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "guachi"
+version = "0.1.0"
+authors = [
+    { name="Alfredo Deza", email="alfredo@deza.pe" },
+]
+description = "A globally accessible configuration manager with persistent dictionary storage"
+readme = "README.rst"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "configparser",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+    "pytest-cov",
+]
+dev = [
+    "black",
+    "flake8",
+    "mypy",
+]
+
+[tool.setuptools]
+packages = ["guachi"]
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = [
+    "guachi/tests",
+]

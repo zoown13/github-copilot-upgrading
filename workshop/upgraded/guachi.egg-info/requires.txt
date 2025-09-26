@@ -1,0 +1,10 @@
+configparser
+
+[dev]
+black
+flake8
+mypy
+
+[test]
+pytest>=7.0
+pytest-cov
